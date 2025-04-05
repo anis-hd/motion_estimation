@@ -115,9 +115,3 @@ with tf.Session() as sess:
             cv2.imwrite(frame_save_path, recon_frame)
             print(f"Saved reconstructed frame at {frame_save_path}")
 
-# Optionally, you can include visualization below if you want to inspect a final frame.
-# For example:
-# plt.imshow(y1_com_output.squeeze() if y1_com_output.shape[-1] == 1 else y1_com_output)
-# plt.title("Y1_com (Final Reconstructed Frame)")
-# plt.axis('off')
-# plt.show()
